@@ -1,0 +1,40 @@
+<div class="o-grid-container o-grid-container--bleed" id="ipo-interactive">
+    <div class="o-grid-row o-grid-row--compact">
+        <div data-o-grid-colspan="12">
+        	<h2 class="o-typography-heading2">Interactive: Are you smarter than an IPO investor?</h2>
+          <h3 class="o-typography-heading3"><p>What has happened to the market value of tech startups after recent IPOs?</p><p><span class="boldItalic">Click and drag the circles</span> to adjust the line to represent what you think are the average <span class="first-trade-label legend-label">first trade value</span>, <span class="peak-value-label legend-label">peak value</span> and <span class="current-value-label legend-label">current market value</span> of tech companies after IPO given the average IPO price of <span class="ipo-label">$44</span> for 51 companies.</p></h3>
+
+          <div id="ipo-controls">
+            <div class="ipo-control">
+              <label for="entry_1433739276">First trade value</label>
+              <input aria-label="First trade value" id="firstTradeInput" name="entry.1433739276" type="number" value="50"/>
+            </div>
+
+            <div class="ipo-control">
+              <label for="entry.1028687383">Peak value</label>
+              <input aria-label="Peak value" name="entry.1028687383" id="peakValueInput" type="number" value="50"/>
+            </div>
+
+            <div class="ipo-control">
+              <label for="entry_1231757449">Peak month</label>
+              <input aria-label="Peak month" name="entry_1231757449" id="peakTimeInput" type="number" value="19"/>
+            </div>
+
+            <div class="ipo-control">
+              <label for="entry.446021521">Current value</label>
+              <input aria-label="Current value" name="entry.446021521" id="currentValueInput" type="number" value="50"/>
+            </div>
+          </div>
+          <div id="ipo-draw-container"></div>
+          <div id="ipo-outcome-container">
+       			<button class="o-buttons o-buttons--standout o-buttons--big" id="ipo-reveal-button">Reveal answers</button>
+            <div id="ipo-outcome">
+              <p id="feedback-comparison"></p>
+
+              <p>Tech startups with recent IPOs had, on average, an <span class="ipo-label">IPO value of $44</span>, <span class="first-trade-label">first trade value of $61</span>, <span class="peak-value-label">peak in value of $74 at 4 months</span> and <span class="current-value-label">current value of $29</span>.</p>
+            </div>
+       		</div>
+          <div class="sourceline">Note: Values are rebased to $1 and weighted by market capitalization. Current values as of June 1, 2016.<br />Source: Triton Research</div>
+        </div>
+    </div>
+</div>

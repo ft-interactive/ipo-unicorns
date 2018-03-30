@@ -1,0 +1,107 @@
+#ipo-explore-data h2.o-typography-heading2:before {
+    display: block;
+    content: '';
+    border-top: 1px solid #a7a59b;
+    width: 160px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+
+#explore-data-container {
+  position: relative;
+
+  #explore-data-box {
+    position: absolute;
+    background: white;
+    padding: 1em;
+    // border-radius: 10px;
+    // box-shadow: 0 1px 1px 0 #cec6b9;
+    background: rgb(255, 249, 241);
+    top: 60px;
+    left: 60px;
+    width: 120px;
+    text-align: left;
+    display: none;
+
+    .explore-category {
+      // margin: 1em 0;
+    }
+
+    // .explore-category:first-of-type {
+    //   margin: 0 0 1em 0;
+    // }
+
+    // .explore-category:last-of-type {
+    //   margin: 1em 0 0 0;
+    // }
+
+    .explore-label {
+      text-transform: uppercase;
+      font-size: 0.8em;
+      color: #505050;
+    }
+
+    .explore-value {
+      font-size: 1em;
+      color: #333;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #explore-data-container #explore-data-box {
+    position: absolute;
+    width: auto;
+    top: 60px;
+    left: 40px;
+  }
+}
+
+#explore-data-small-multiples,
+#explore-data {
+  margin: 1em 0;
+  height: 400px;
+
+  path {
+    stroke-width: 1px;
+    stroke: #c3bcb0;
+    fill: none;
+  }
+
+  		.yAxis path {
+			stroke: none;
+		}
+
+
+	.xAxis text,
+	.yAxis text {
+		fill: #6b6e68;
+		font-size: 14px;
+		pointer-events: none;
+		user-select: none;
+	}
+
+	text.axisLabel {
+		font-size: 14px;
+	}
+
+	.yAxis .tick line {
+	    opacity: 1;
+	    stroke: #C3BCB0;
+	    stroke-dasharray: 1,2;
+	}
+
+	.xAxis .tick line {
+	    opacity: 1;
+	    stroke: #C3BCB0;
+	}
+
+	.small-multiple {
+		display: inline-block;
+
+		text {
+			position:absolute;
+		}
+	}
+}

@@ -1,0 +1,207 @@
+$ipoColor: #d7706c;
+$firstTradeColor: #9e2f50;
+$peakValueColor: #76acb8;
+$currentValueColor: #256ea6;
+
+.sourceline {
+	color: #74736c;
+    font-weight: 200;
+    font-size: 0.8em;
+    margin-bottom: 1.5em;
+}
+
+.ipo-label {
+  color: $ipoColor;
+}
+
+.first-trade-label {
+  color: $firstTradeColor;
+}
+
+.peak-value-label {
+  color: $peakValueColor;
+}
+
+.current-value-label {
+  color: $currentValueColor;
+}
+
+
+#ipo-interactive {
+
+	h2 {
+		margin-top: 1em;
+	}
+
+	h2.o-typography-heading2:before {
+	    display: block;
+	    content: '';
+	    border-top: 1px solid #a7a59b;
+	    width: 160px;
+	    margin-bottom: 30px;
+	    margin-top: 0;
+	}
+
+	form {
+		text-align: center;
+	}
+
+	.boldItalic {
+		font-weight: 600;
+		font-style: italic;
+	}
+
+	#ipo-controls {
+		margin: 1em 0;
+
+		.ipo-label {
+			font-size: 1.3em;
+		}
+
+		.ipo-control {
+			display: inline-block;
+			margin-right: 10px;
+			width: 19%;
+			overflow-x: show;
+
+			label {
+				display: block;
+				margin-bottom: 10px;
+				text-align: center;
+				color: #6b6e68;
+			}
+
+			input {
+				width: 5ex;
+				font-size: 1.3em;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			input#firstTradeInput {
+				color: $firstTradeColor;
+			}
+
+			input#peakValueInput,
+			input#peakTimeInput {
+				color: $peakValueColor;
+			}
+
+			input#currentValueInput {
+				color: $currentValueColor;
+			}
+		}
+
+	}
+
+	#ipo-draw-container {
+		margin: 1em 0;
+		height: 400px;
+
+		path {
+			stroke-width: 1px;
+			stroke: #c3bcb0;
+			fill: none;
+		}
+
+		.yAxis path {
+			stroke: none;
+		}
+
+		.axisLabel {
+			font-size: 14px;
+		}
+
+		text {
+			fill: #6b6e68;
+			font-size: 14px;
+			pointer-events: none;
+			user-select: none;
+		}
+
+		.yAxis .tick line {
+		    opacity: 1;
+		    stroke: #C3BCB0;
+		    stroke-dasharray: 1,2;
+		}
+
+		.xAxis .tick line {
+		    opacity: 1;
+		    stroke: #C3BCB0;
+		}
+
+		.ipoPoint {
+			fill: $ipoColor;
+		}
+
+		.draggable {
+			cursor: pointer;
+			stroke-width: 30;
+			stroke: #fff1e0;
+			stroke-opacity: 0;
+		}
+
+		.firstTradePoint {
+			fill: $firstTradeColor;
+		}
+
+		.peakValuePoint {
+			fill: $peakValueColor;
+		}
+
+		.currentValuePoint {
+			fill: $currentValueColor;
+		}
+
+		.answerLine {
+			transition: opacity 500ms linear;
+		}
+	}
+
+	#ipo-outcome-container {
+
+		button {
+			margin: 0 auto;
+			display: block;
+		}
+
+		#ipo-outcome {
+			height: 0;
+			opacity: 0;
+			overflow: hidden;
+			transition: height 500ms linear;
+			transition: opacity 500ms linear;
+			background: white;
+			padding: 1em;
+			border-radius: 10px;
+			box-shadow: 0 1px 1px 0 #cec6b9;
+		}
+
+		.tweet-container {
+			margin-left: 10px;
+		}
+
+		.tweet-label {
+			text-transform: uppercase;
+			font-size: 0.7em;
+			color: #505050;
+			margin-right: 5px;
+		}
+
+		.o-share__action {
+			float: none !important;
+			display: inline-block !important;
+			vertical-align: bottom !important;
+			padding-bottom: 0 !important;
+		}
+
+	}
+}
+
+
+@media (max-width: 490px) {
+	#ipo-interactive #ipo-controls .ipo-control input {
+		width: 4ex;
+	}
+}

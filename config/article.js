@@ -1,39 +1,38 @@
 export default (environment = 'development') => ({ // eslint-disable-line
 
   // link file UUID
-  id: '$uuid',
+  id: '57c96dfc-36e7-11e6-9a05-82a9b15a8ee7',
 
   // canonical URL of the published page
-  // "$url" get filled in by the ./configure script
-  url: '$url',
+  //  get filled in by the ./configure script
+  url: 'https://ig.ft.com/sites/2016/ipo-unicorns/',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
-  publishedDate: new Date(),
+  publishedDate: new Date('2016-06-21T17:11:22Z'),
 
-  headline: 'Politics and the English Language',
+  headline: 'Unicorns face tough road to Wall St',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Political language is designed to make lies sound truthful' +
-           'and murder respectable, and to give an appearance of solidity to pure wind',
+  summary: 'With a pileup of tech companies in the private funding market and public deals losing value, what will become of all the unicorns?',
 
   topic: {
-    name: 'Starter Kit',
-    url: '/foo',
+    name: 'Equities',
+    url: 'http://www.ft.com/markets/equities',
   },
 
-  relatedArticle: {
-    text: 'Related article »',
-    url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
-  },
+  // relatedArticle: {
+  //   text: 'Related article »',
+  //   url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
+  // },
 
   mainImage: {
     title: '',
-    description: '',
-    credit: '',
+    description: 'Uber on the streets of Paris',
+    credit: '© Reuters',
 
     // You can provide a UUID to an image and it was populate everything else
-    uuid: 'c4bf0be4-7c15-11e4-a7b8-00144feabdc0',
+    uuid: 'ba6bdaaa-2e52-11e6-bf8d-26294ad519fc',
 
     // You can also provide a URL
     // url: 'https://image.webservices.ft.com/v1/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2Fc4bf0be4-7c15-11e4-a7b8-00144feabdc0?source=ig&fit=scale-down&width=700',
@@ -42,19 +41,19 @@ export default (environment = 'development') => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Author One', url: '/foo/bar' },
-    { name: 'Author Two' },
+    { name: 'Nicole Bullock', url: 'https://twitter.com/nicoleabullock' },
+    { name: 'Joanna S Kao', url: 'https://twitter.com/joannaskao' },
   ],
 
   // Appears in the HTML <title>
   title: '',
 
   // meta data
-  description: '',
+  description: 'With a pileup of tech companies in the private funding market and public deals losing value, what will become of all the unicorns?',
 
   /*
   TODO: Select Twitter card type -
-        "summary" or "summary_large_image"
+        summary or summary_large_image
 
         Twitter card docs:
         https://dev.twitter.com/cards/markup
@@ -66,7 +65,7 @@ export default (environment = 'development') => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-  // socialImage: '',
+  socialImage: 'http://ig.ft.com/sites/2016/ipo-unicorns/images/social.jpg',
   // socialHeadline: '',
   // socialDescription: '',
   // twitterCreator: '@author's_account', // shows up in summary_large_image cards
@@ -78,7 +77,7 @@ export default (environment = 'development') => ({ // eslint-disable-line
   // twitterRelatedAccounts: ['authors_account_here', 'ftdata'],
 
   // Fill out the Facebook/Twitter metadata sections below if you want to
-  // override the "General social" options above
+  // override the General social options above
 
   // TWITTER METADATA (for Twitter cards)
   // twitterImage: '',
@@ -117,7 +116,7 @@ export default (environment = 'development') => ({ // eslint-disable-line
     /*
     Product name
 
-    This will usually default to "IG"
+    This will usually default to IG
     however another value may be needed
     */
     // product: '',

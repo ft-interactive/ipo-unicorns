@@ -3,7 +3,7 @@ export default (environment = 'development') => ({ // eslint-disable-line
   errorReporting: environment === 'production',
   analytics: environment === 'production',
   googleAnalytics: environment === 'production',
-  ads: true,
+  ads: false,
   onwardjourney: true,
   shareButtons: true,
   header: true,
@@ -27,5 +27,5 @@ export default (environment = 'development') => ({ // eslint-disable-line
     3a499586-b2e0-11e4-a058-00144feab7de
 
   */
-  comments: true,
+  comments: false,
 });
