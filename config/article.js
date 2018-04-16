@@ -65,7 +65,7 @@ export default (environment = 'development') => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-  socialImage: 'http://ig.ft.com/sites/2016/ipo-unicorns/images/social.jpg',
+  socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Aba6bdaaa-2e52-11e6-bf8d-26294ad519fc?source=ig',
   // socialHeadline: '',
   // socialDescription: '',
   // twitterCreator: '@author's_account', // shows up in summary_large_image cards
